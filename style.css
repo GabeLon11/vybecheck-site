@@ -1,0 +1,86 @@
+:root {
+  --bg1: #0b1220;
+  --bg2: #0f1a2e;
+  --card: rgba(255,255,255,0.06);
+  --stroke: rgba(255,255,255,0.12);
+  --text: rgba(255,255,255,0.92);
+  --sub: rgba(255,255,255,0.72);
+  --link: rgba(120, 200, 255, 0.95);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: radial-gradient(1200px 800px at 20% 0%, rgba(74,111,165,0.35), transparent 55%),
+              radial-gradient(1000px 700px at 80% 10%, rgba(22,96,136,0.35), transparent 60%),
+              linear-gradient(145deg, var(--bg1), var(--bg2));
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 28px 18px 48px;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.brand {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  font-size: 18px;
+}
+
+.links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 26px;
+}
+
+h2 {
+  margin: 18px 0 8px;
+  font-size: 18px;
+}
+
+p, li {
+  color: var(--sub);
+  line-height: 1.55;
+}
+
+.small {
+  margin-top: 14px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.60);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.10);
+  margin: 16px 0;
+}
