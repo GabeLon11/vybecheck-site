@@ -2,67 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Privacy Policy • VybeCheck</title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <div class="container">
     <div class="nav">
-      <div class="brand">VybeCheck</div>
-      <div class="links">
-        <a href="/privacy/">Privacy</a>
-        <a href="/guidelines/">Community Guidelines</a>
-        <a href="/support/">Support</a>
+      <a class="brand" href="/"><span class="dot"></span><span>VybeCheck</span></a>
+      <div class="navlinks">
+        <a class="pill" href="/guidelines">Guidelines</a>
+        <a class="pill" href="/support">Support</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card page">
       <h1>Privacy Policy</h1>
-      <p><strong>Last updated:</strong> <!-- put date here --> January __, 2026</p>
+      <p><b>Short version:</b> We collect the minimum needed to run the app (like location when you use the “tonight” features), and we don’t sell your personal data.</p>
+      <hr class="hr"/>
 
-      <p>
-        VybeCheck helps people share venue “vybes.” This policy explains what we collect, why we collect it,
-        and the choices you have.
-      </p>
-
-      <h2>What we collect</h2>
+      <p><b>What we collect</b></p>
       <ul>
-        <li><strong>Profile info:</strong> username, display name, optional bio/avatar.</li>
-        <li><strong>Location info:</strong> approximate location used to show nearby venues and enable location-based features.</li>
-        <li><strong>Posts:</strong> your mood tag, emoji, crowd score, comment, and the venue you posted at.</li>
-        <li><strong>Device/usage:</strong> basic diagnostics to keep the app reliable (crash/bug context).</li>
+        <li>Location (when you allow it) to show nearby venues and enable location-based posting.</li>
+        <li>Content you submit (posts, tags, emojis, comments).</li>
+        <li>Basic device/app diagnostics to fix bugs (where available).</li>
       </ul>
 
-      <h2>How we use information</h2>
+      <p><b>How we use it</b></p>
       <ul>
-        <li>To run core features (nearby venues, posting, feeds, favorites, badges).</li>
-        <li>To keep the community safe (moderation, abuse prevention, reports).</li>
-        <li>To improve the product (debugging, performance, feature planning).</li>
+        <li>To display app features (feeds, venue pages, your profile).</li>
+        <li>To keep the app safe (reports, abuse prevention).</li>
+        <li>To improve performance and fix bugs.</li>
       </ul>
 
-      <h2>Sharing</h2>
-      <p>
-        We don’t sell your personal information. We may share limited data with service providers
-        (hosting, databases, email tools) strictly to operate VybeCheck.
-      </p>
+      <p><b>Contact</b></p>
+      <p>If you have questions, contact us at <a href="mailto:admin@vybecheckapp.com">admin@vybecheckapp.com</a>.</p>
 
-      <h2>Your choices</h2>
-      <ul>
-        <li>You can disable location in iOS Settings (some features may not work).</li>
-        <li>You can request deletion of your data (see Support page).</li>
-      </ul>
+      <p style="margin-top:16px;"><i>Note:</i> Replace this text with your final policy when you’re ready. This page is here so your beta + App Store links work cleanly.</p>
+    </div>
 
-      <h2>Contact</h2>
-      <p>
-        Questions? Contact us at <a href="mailto:admin@vybecheckapp.com">admin@vybecheckapp.com</a>.
-      </p>
-
-      <hr />
-      <p class="small">
-        This is a starter privacy policy page. You should tailor it to your actual data practices and app behavior.
-      </p>
+    <div class="footer">
+      <span>© <span id="y"></span> VybeCheck</span>
+      <span><a href="/">Home</a> • <a href="/support">Support</a></span>
     </div>
   </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
