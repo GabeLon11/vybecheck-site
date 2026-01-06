@@ -1,9 +1,74 @@
 <!doctype html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=/privacy/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>VybeCheck</title>
-  </head>
-  <body></body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VybeCheck</title>
+  <meta name="description" content="Check the vibe. Share the vibe. A simple way to see what’s going on tonight." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <span class="dot"></span>
+        <span>VybeCheck</span>
+      </div>
+      <div class="navlinks">
+        <a class="pill" href="/privacy">Privacy</a>
+        <a class="pill" href="/guidelines">Guidelines</a>
+        <a class="pill" href="/support">Support</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="card heroLeft">
+        <h1 class="h1">Know the vibe<br/>before you go.</h1>
+        <p class="sub">
+          VybeCheck lets you see what spots feel like tonight — and share a quick vibe update with friends.
+          Built for real nights out, not endless scrolling.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn" href="/support">Contact / Feedback →</a>
+          <a class="btn btnSecondary" href="/privacy">Privacy policy</a>
+        </div>
+
+        <div class="grid">
+          <div class="tile">
+            <p class="t">Live updates</p>
+            <p class="d">Post a quick vibe: tag, emoji, crowd score.</p>
+          </div>
+          <div class="tile">
+            <p class="t">Location-based</p>
+            <p class="d">Shows relevant places nearby and tonight’s activity.</p>
+          </div>
+          <div class="tile">
+            <p class="t">Safety-first</p>
+            <p class="d">Report content, guidelines, and support are built in.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card heroRight">
+        <p class="kicker">What we care about</p>
+        <ul class="list">
+          <li class="li"><b>Respect</b> — no harassment, hate, or doxxing.</li>
+          <li class="li"><b>Consent</b> — don’t post people’s private info.</li>
+          <li class="li"><b>Real nights</b> — keep it honest, keep it simple.</li>
+          <li class="li"><b>Support</b> — reach us fast if something’s off.</li>
+        </ul>
+
+        <div class="footer">
+          <span>© <span id="y"></span> VybeCheck</span>
+          <span><a href="/guidelines">Community Guidelines</a> • <a href="/privacy">Privacy</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
