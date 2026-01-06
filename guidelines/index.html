@@ -2,52 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Community Guidelines • VybeCheck</title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <div class="container">
     <div class="nav">
-      <div class="brand">VybeCheck</div>
-      <div class="links">
-        <a href="/privacy/">Privacy</a>
-        <a href="/guidelines/">Community Guidelines</a>
-        <a href="/support/">Support</a>
+      <a class="brand" href="/"><span class="dot"></span><span>VybeCheck</span></a>
+      <div class="navlinks">
+        <a class="pill" href="/privacy">Privacy</a>
+        <a class="pill" href="/support">Support</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card page">
       <h1>Community Guidelines</h1>
-      <p><strong>Last updated:</strong> January __, 2026</p>
+      <p>VybeCheck is for sharing what a place feels like — keep it respectful and safe.</p>
+      <hr class="hr"/>
 
-      <p>VybeCheck is about sharing the vibe, not tearing people down.</p>
-
-      <h2>Not allowed</h2>
+      <p><b>Not allowed</b></p>
       <ul>
-        <li>Harassment, hate, threats, or targeted abuse</li>
-        <li>Sexual content involving minors, or exploitation</li>
-        <li>Doxxing or sharing private personal info</li>
-        <li>Illegal activity, violence, or self-harm encouragement</li>
-        <li>Spam, scams, or impersonation</li>
+        <li>Harassment, hate, threats, or targeted abuse.</li>
+        <li>Doxxing or sharing personal information about others.</li>
+        <li>Sexual content involving minors (instant ban + report).</li>
+        <li>Illegal content or encouraging illegal activity.</li>
+        <li>Spam or impersonation.</li>
       </ul>
 
-      <h2>Reporting</h2>
-      <p>
-        Use the in-app <strong>Report</strong> button on posts. We review reports and may remove content or restrict accounts.
-      </p>
+      <p><b>Reporting</b></p>
+      <p>You can report posts in-app. We review reports and may remove content or restrict accounts.</p>
 
-      <h2>Be real</h2>
-      <ul>
-        <li>Keep it about the venue vibe</li>
-        <li>Don’t post private info about others</li>
-        <li>Respect staff and other guests</li>
-      </ul>
+      <p><b>Contact</b></p>
+      <p>If something urgent comes up, email <a href="mailto:admin@vybecheckapp.com">admin@vybecheckapp.com</a>.</p>
+    </div>
 
-      <p class="small">
-        These guidelines may evolve as the community grows.
-      </p>
+    <div class="footer">
+      <span>© <span id="y"></span> VybeCheck</span>
+      <span><a href="/">Home</a> • <a href="/privacy">Privacy</a></span>
     </div>
   </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
